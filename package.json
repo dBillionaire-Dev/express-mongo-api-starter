@@ -1,6 +1,6 @@
 {
   "name": "create-express-mongo-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A backend heavy full CRUD API starter files, built to reduce time spent on starter files creation for new projects with Node.js with Express using TypeScript and MongoDB",
   "main": "index.ts",
   "scripts": {

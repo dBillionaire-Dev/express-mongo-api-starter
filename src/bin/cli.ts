@@ -24,7 +24,7 @@ const main = async () => {
     console.log(chalk.green(`Creating project: ${projectName}`));
 
     // Clone template repo
-    const repoURL = "https://github.com/YOUR_USERNAME/node-express-api-template.git";
+    const repoURL = "https://github.com/dBillionaire-Dev/express-mongo-api-starter.git";
     try {
         await execAsync(`git clone ${repoURL} ${projectName}`);
         console.log(chalk.green("API template created successfully!"));

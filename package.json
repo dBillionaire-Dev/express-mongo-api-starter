@@ -13,7 +13,7 @@
   "author": "NexDev",
   "license": "ISC",
   "bin": {
-    "create-nex-api": "./server.ts"
+    "create-nex-api": "src/bin/cli.ts"
   },
   "type": "module",
   "devDependencies": {

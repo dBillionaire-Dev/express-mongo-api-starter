@@ -1,5 +1,11 @@
 # create-express-mongo-api
 
+![Node.js](https://img.shields.io/badge/Node.js-18+-green)
+![Express](https://img.shields.io/badge/Express.js-Backend-black)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-green)
+![JWT](https://img.shields.io/badge/Auth-JWT-orange)
+![License](https://img.shields.io/badge/License-MIT-blue)
+
 A CLI tool that quickly scaffolds a **Node.js + Express + MongoDB + TypeScript API starter project**.
 
 This tool clones a production-ready backend template and installs all dependencies automatically so you can start building immediately.

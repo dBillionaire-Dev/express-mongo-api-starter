@@ -1,10 +1,4 @@
-# create-express-mongo-api
-
-![Node.js](https://img.shields.io/badge/Node.js-18+-green)
-![Express](https://img.shields.io/badge/Express.js-Backend-black)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-green)
-![JWT](https://img.shields.io/badge/Auth-JWT-orange)
-![License](https://img.shields.io/badge/License-MIT-blue)
+# CLI tool for the Express, MongoDB, TypeScript API Starter Template
 
 A CLI tool that quickly scaffolds a **Node.js + Express + MongoDB + TypeScript API starter project**.
 
@@ -15,10 +9,7 @@ This tool clones a production-ready backend template and installs all dependenci
 ## Features
 
 * Express.js REST API structure
-* MongoDB with Mongoose
 * TypeScript support
-* Authentication boilerplate
-* Error handling middleware
 * Organized folder structure
 * Ready-to-run development setup
 * Clean scalable architecture
@@ -32,7 +23,7 @@ You do not need to install the CLI globally.
 Run directly using **npx**:
 
 ```
-npx create-express-mongo-api my-app
+npx create-express-mongo-api
 ```
 
 This will:
@@ -89,31 +80,6 @@ npm run dev
 src
  ├── bin
  │   └── cli.ts
- │
- ├── controllers
- │   ├── auth.controller.ts
- │   └── user.controller.ts
- │
- ├── controllers
- │   ├── auth.controller.ts
- │   └── user.controller.ts
- │
- ├── middlewares
- │   ├── auth.middleware.ts
- │   └── error.middleware.ts
- │
- ├── models
- │   └── user.model.ts
- │
- ├── routes
- │   ├── auth.route.ts
- │   └── user.route.ts
- │
- ├── utils
- │   ├── api.response.ts
- │   ├── jwt.ts
- │   └── password.hash.ts
- │
  └── index.ts
 ```
 
@@ -166,9 +132,6 @@ npm start
 * Node.js
 * Express
 * TypeScript
-* MongoDB
-* Mongoose
-* JWT Authentication
 
 ---
 

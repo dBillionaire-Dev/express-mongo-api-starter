@@ -23,7 +23,7 @@ const main = async () => {
 
     console.log(chalk.green(`Creating project: ${projectName}`));
 
-    const repoURL = "https://github.com/dBillionaire-Dev/RESTful_API-task-manager";
+    const repoURL = "https://github.com/dBillionaire-Dev/express-mongo-api";
     try {
         await execAsync(`git clone --depth=1 ${repoURL} ${projectName}`);
         console.log(chalk.green("API template created successfully!"));

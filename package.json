@@ -1,5 +1,5 @@
 {
-  "name": "express-mongo-typescript-starter-file",
+  "name": "create-express-mongo-api",
   "version": "1.0.3",
   "description": "A backend heavy full CRUD API starter files, built to reduce time spent on starter files creation for new projects with Node.js with Express using TypeScript and MongoDB",
   "main": "index.ts",
@@ -7,7 +7,7 @@
     "dev": "nodemon --watch src --ext ts,js --exec \"ts-node src/index.ts\"",
     "start": "node dist/index.js",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\""
   },
   "keywords": [],
   "author": "NexDev",

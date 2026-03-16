@@ -15,19 +15,16 @@ const main = async () => {
             type: "input",
             name: "projectName",
             message: "Enter your new project name:",
-            // validate: (input) => input ? true : "Project name cannot be empty"
             validate: (input) => /^[a-zA-Z0-9-_]+$/.test(input) || "Use only letters, numbers, - and _",
         }
     ]);
 
-    // const { projectName } = answers;
     const projectName = answers.projectName.trim();
 
     console.log(chalk.green(`Creating project: ${projectName}`));
 
-    const repoURL = "https://github.com/dBillionaire-Dev/express-mongo-api-starter.git";
+    const repoURL = "https://github.com/dBillionaire-Dev/RESTful_API-task-manager";
     try {
-        // await execAsync(`git clone ${repoURL} ${projectName}`);
         await execAsync(`git clone --depth=1 ${repoURL} ${projectName}`);
         console.log(chalk.green("API template created successfully!"));
     } catch (err) {
@@ -36,7 +33,6 @@ const main = async () => {
     }
 
     try {
-        // await execAsync(`rm -rf ${projectName}/.git`);
         await fs.rm(`${projectName}/.git`, { recursive: true, force: true });
     } catch (err) {
         console.error(chalk.red("Failed to remove git history"), err);
@@ -44,7 +40,6 @@ const main = async () => {
 
     try {
         console.log(chalk.blue("Installing dependencies..."));
-        // await execAsync(`cd ${projectName} && npm install`);
         await execAsync(`npm install`, { cwd: projectName });
         console.log(chalk.green("Dependencies installed!"));
     } catch (err) {
@@ -57,7 +52,7 @@ const main = async () => {
     console.log(`\t${chalk.green.bold("cd")} ${projectName}`);
     console.log(`\t${chalk.green.bold("npm run dev")}\n`);
 
-    console.log(chalk.gray("(Happy coding!"));
+    console.log(chalk.gray("(Happy coding!)"));
 };
 
 main();

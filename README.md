@@ -43,13 +43,20 @@ This will:
 Run the CLI:
 
 ```
-npx create-express-mongo-api <project-name>
+npx create-express-mongo-api
 ```
 
 Example:
 
 ```
-npx create-express-mongo-api my-api
+npx create-express-mongo-api 
+```
+
+You will get the prompt asking "Enter your new project name:"
+Type in your desired project name. Example:
+
+```
+Enter your new project name: my-api
 ```
 
 ---

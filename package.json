@@ -15,6 +15,10 @@
   "bin": {
     "create-nex-api": "src/bin/cli.ts"
   },
+  "files": [
+    "dist",
+    ".env.example"
+  ],
   "type": "module",
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",

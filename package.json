@@ -7,17 +7,17 @@
     "dev": "nodemon --watch src --ext ts,js --exec \"ts-node src/index.ts\"",
     "start": "node dist/index.js",
     "build": "tsc",
+    "prepublishOnly": "npm run build",
     "test": "echo \"No test specified\""
   },
   "keywords": [],
   "author": "NexDev",
   "license": "ISC",
   "bin": {
-    "create-nex-api": "src/bin/cli.ts"
+    "create-express-mongo-api": "./dist/bin/cli.js"
   },
   "files": [
-    "dist",
-    ".env.example"
+    "dist"
   ],
   "type": "module",
   "devDependencies": {
